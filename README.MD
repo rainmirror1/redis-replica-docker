@@ -10,7 +10,7 @@
 
 # Run
 
-`docker run --name redis-prim-1 -d -p 16379:6379 redis-primary && docker run --name redis-repl-1 -d -p 26379:6379 --add-host host.docker.internal:host-gateway redis-replica` [^1]
+`docker run --name redis-prim-1 -d -p 16379:6379 --add-host host.docker.internal:host-gateway redis-primary && docker run --name redis-repl-1 -d -p 26379:6379 --add-host host.docker.internal:host-gateway redis-replica` [^1]
 
 # Connect
 
